@@ -15,12 +15,12 @@ The Weather Website project aims to deliver an intuitive and visually appealing 
 # Features
 The Weather Website aims to offer the following features:
 
-- Air Quality: Provides information about the air quality index (AQI) and related metrics to keep users informed about the current air conditions.
-- Wind: Displays real-time wind speed and direction to give users a sense of the atmospheric conditions.
-- Sun: Provides sunrise and sunset times, ensuring users can plan their activities accordingly.
-- UV Index: Offers UV index readings to help users understand the level of UV radiation and take necessary precautions.
-- Rain Chance: Indicates the probability of rain, allowing users to plan their outdoor activities effectively.
-- 7-Day Forecast: Provides a comprehensive 7-day weather forecast, including temperature, humidity, and weather conditions for each day.
+- **Air Quality:** Provides information about the air quality index (AQI) and related metrics to keep users informed about the current air conditions.
+- **Wind:** Displays real-time wind speed and direction to give users a sense of the atmospheric conditions.
+- **Sun:** Provides sunrise and sunset times, ensuring users can plan their activities accordingly.
+- **UV Index:** Offers UV index readings to help users understand the level of UV radiation and take necessary precautions.
+- **Rain Chance:** Indicates the probability of rain, allowing users to plan their outdoor activities effectively.
+- **7-Day Forecast:** Provides a comprehensive 7-day weather forecast, including temperature, humidity, and weather conditions for each day.
 Please note that these features are subject to change and further enhancements as the project evolves.
 
 # Installation
@@ -29,7 +29,7 @@ To run the Weather Website project locally on your machine, follow these steps:
 1. Clone the repository or download the source code as a ZIP file.
 2. Unzip the downloaded file, if applicable.
 3. Open the project folder in a text editor or integrated development environment (IDE) of your choice.
-4. Locate the index.html file and open it in a web browser.
+4. Locate the **'index.html'** file and open it in a web browser.
 5. The website should now be running, and you can start exploring the weather reports.
 
 # Usage
