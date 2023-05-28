@@ -1,4 +1,7 @@
 # Weather Website
+
+## This Project is under progress
+
 Welcome to the Weather Website project! This is an ongoing development project aimed at creating a responsive website that provides detailed weather reports for various factors such as air quality, wind, sun, UV index, rain chance, and upcoming 7-day forecasts.
 
 # Table of Contents
