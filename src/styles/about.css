@@ -1,0 +1,100 @@
+@import url('/src/styles/main.css');
+
+#about-ctr {
+    height: 88vh;
+    width: 94%;
+    background-color: var(--color-surface);
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 4% auto;
+    border-bottom: 5px solid var(--color-surface);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#about-ctr::-webkit-scrollbar-button {
+    overflow: hidden;
+}
+
+#about-ctr::-webkit-scrollbar {
+    width: 8px;
+}
+
+#about-footer {
+    position: fixed;
+    bottom: 0px;
+    margin: 0px;
+    padding: 2px;
+    gap: 0px;
+    background-color: var(--color-background);
+    width: 100%;
+    text-align: center;
+}
+
+#about-footer p {
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+.about-item {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--color-background);
+    width: 100%;
+    border-radius: 25px;
+}
+
+.about-item a {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    padding: 2px 1.2rem;
+    font-size: inherit;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    text-align: center;
+    margin: 0px 5px;
+    width: fit-content;
+    display: inline-block;
+    background-color: rgba(119, 119, 119, 0.315);
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color 0.3s ease-in-out, box-shadow .3s ease-in-out;
+    margin: 1px;
+}
+
+.about-item a:hover {
+    background-color: var(--color-on-surface-variant);
+    background-color: rgba(119, 119, 119, 0.582);
+    color: #fff;
+    box-shadow: inset 1000px 0 0 0 #54b3d6;
+}
+
+.about-title {
+    color: var(--color-on-surface-variant);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.about-sub {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.about-desc {
+    font-size: 1.3rem;
+    padding: 2px;
+}
+
+#hr-1 {
+    width: 40%;
+    margin: 10px auto 0px auto;
+    height: 3px;
+    outline: none;
+    border: 1px solid var(--color-on-surface-variant);
+    background-color: var(--color-on-surface-variant);
+}

@@ -1,0 +1,416 @@
+@import url('/src/styles/main.css');
+
+#aqi-ctr {
+    width: 100vw;
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aqi-h-title {
+    font-size: 200%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#aqi-wrapper {
+    background-color: var(--color-surface);
+    width: 96%;
+    height: 98%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#aqi-flex {
+    position: relative;
+    padding: 2rem;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto repeat(20, 1fr);
+    top: 0px;
+    /* ADJUST AS DYNAMIC DATA is implemented */
+    overflow: scroll;
+}
+
+#aqi-header-ctr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 4px;
+}
+
+#aqi-header-ctr>div,
+#flex-row,
+#aqi-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex-row a:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+#aqi-header-ctr div:nth-of-type(1) {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+#aqi-header-ctr div:nth-of-type(2) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+}
+
+#aqi-header-ctr div:nth-of-type(3) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--color-background);
+}
+
+.aqi-box {
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--color-background);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    /* border: 5px solid rgba(255, 255, 255, 0.2); */
+}
+
+div:nth-of-type(1).aqi-box {
+    user-select: none;
+    grid-column: 1 / 8;
+}
+
+.aqi-box p:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aqi-title {
+    font-size: 2rem;
+    color: var(--color-on-surface-variant);
+}
+
+.aqi-content {
+    font-size: 2.5rem;
+}
+
+.aqi-box span:nth-of-type(2),
+.aqi-box span:nth-of-type(3) {
+    margin: 15px 0 5px 0;
+}
+
+.aqi-box span:nth-of-type(3),
+.red {
+    color: red;
+}
+
+.red {
+    margin: 3px 0px;
+}
+
+.red a {
+    color: white;
+    margin: 0px 3px;
+}
+
+.info-link-inline {
+    display: inline;
+    background-color: var(--color-surface);
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+#state-message {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#state-message p {
+    line-height: 1.2;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+#state-message p:nth-of-type(2n + 1) {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* HIDDEN DIVS - BELOW */
+input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.aqi-box-btn {
+    display: inline-block;
+    background-color: var(--color-surface);
+    padding: 8px 26px;
+    border-radius: 10px;
+    transition: var(--transition-500ms-bsh);
+    cursor: pointer;
+}
+
+.aqi-box-btn:hover,
+.info-link-inline:hover {
+    background-color: var(--color-on-surface-variant);
+}
+
+/* Default State */
+.aqi-box-text {
+    display: none;
+    text-align: center;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked~.aqi-box-text {
+    display: block;
+}
+
+/* HIDDEN DIVS - ABOVE */
+
+
+
+
+
+
+
+
+
+.render-hourly,
+.aqi-box-btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 2rem;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: var(--radius-pill);
+    background-color: rgba(119, 119, 119, 0.315);
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: var(--transition-500ms-bsh);
+}
+
+.render-hourly:hover,
+.aqi-box-btn:hover {
+    cursor: pointer;
+    background-color: rgba(119, 119, 119, 0.582);
+    cursor: pointer;
+    color: #fff;
+    box-shadow: inset 400px 0 0 0 #54b3d6;
+}
+
+.aqi-box:nth-of-type(1) .aqi-content {
+    padding: 0 26px;
+    border-radius: 15px;
+    cursor: help;
+}
+
+/* .aqi-box:nth-of-type(2) {
+    grid-row: 2 / 4;
+} */
+
+.aqi-box:nth-of-type(1) .aqi-box-text span:nth-of-type(1) p {
+    display: inline;
+    padding: 0px 16px;
+    border-radius: 15px;
+    line-height: 1.6;
+}
+
+.aqi-box:nth-of-type(1) .aqi-box-text span:nth-of-type(1) p:nth-of-type(1) {
+    background-color: var(--color-bg-aqi-1);
+    color: var(--color-bg-aqi-1-text);
+}
+
+.aqi-box:nth-of-type(1) .aqi-box-text span:nth-of-type(1) p:nth-of-type(2) {
+    background-color: var(--color-bg-aqi-2);
+    color: var(--color-bg-aqi-2-text);
+}
+
+.aqi-box:nth-of-type(1) .aqi-box-text span:nth-of-type(1) p:nth-of-type(3) {
+    background-color: var(--color-bg-aqi-3);
+    color: var(--color-bg-aqi-3-text);
+}
+
+.aqi-box:nth-of-type(1) .aqi-box-text span:nth-of-type(1) p:nth-of-type(4) {
+    background-color: var(--color-bg-aqi-4);
+    color: var(--color-bg-aqi-4-text);
+}
+
+.aqi-box:nth-of-type(1) .aqi-box-text span:nth-of-type(1) p:nth-of-type(5) {
+    background-color: var(--color-bg-aqi-5);
+    color: var(--color-bg-aqi-5-text);
+}
+
+.aqi-box:nth-of-type(1) .aqi-box-text span:nth-of-type(1) p:nth-of-type(6) {
+    background-color: var(--color-bg-aqi-6);
+    color: var(--color-bg-aqi-6-text);
+}
+
+.aqi-box:nth-of-type(7),
+.aqi-box:nth-of-type(8) {
+    position: relative;
+}
+
+.special-abs {
+    position: absolute;
+    top: 0%;
+    right: 4%;
+    color: red;
+    font-size: 3rem;
+}
+
+.aqi-cell .special-abs {
+    font-size: 2rem;
+}
+
+.aqi-box:nth-of-type(7) .aqi-title,
+.aqi-box:nth-of-type(8) .aqi-title {
+    background-color: var(--color-on-surface-variant);
+    color: var(--color-background);
+    font-weight: bolder;
+}
+
+.aqi-row-all {
+    grid-column: 1 / 8;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    border-radius: 10px;
+    /* background-color: var(--color-background); */
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    width: 100%;
+    height: 100%;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 2px;
+    padding: 5px;
+    transition: var(--transition-500ms-bsh);
+}
+
+.aqi-row-all div {
+    /* background-color: var(--color-surface); */
+    background-color: var(--color-background);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    position: relative;
+}
+
+.aqi-row-all div:nth-of-type(1) {
+    background-color: var(--color-background);
+}
+
+.aqi-row-all .aqi-title,
+.aqi-box .aqi-title {
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--color-background);
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+.aqi-row-all .aqi-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+
+.aqi-el-details span {
+    background-color: var(--color-background);
+    color: var(--color-on-surface-variant);
+    padding: 0px 8px;
+    border-radius: 15px;
+    margin-top: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aqi-box:nth-of-type(7) .aqi-el-details span,
+.aqi-box:nth-of-type(8) .aqi-el-details span {
+    background-color: var(--color-on-surface-variant);
+    color: black;
+}
+
+.aqi-el-details span:hover {
+    background-color: var(--color-on-surface-variant);
+    color: black;
+    transform: scale(1.1);
+}
+
+.aqi-box:nth-of-type(7) .aqi-el-details span:hover,
+.aqi-box:nth-of-type(8) .aqi-el-details span:hover {
+    background-color: var(--color-on-surface);
+    color: var(--color-background);
+}
+
+#aqi-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#aqi-location>* {
+    font-size: 2rem;
+}
+
+.aqi-row-all .aqi-cell:nth-of-type(7) .aqi-title,
+.aqi-row-all .aqi-cell:nth-of-type(8) .aqi-title {
+    background-color: var(--color-on-surface-variant);
+    color: black;
+    font-weight: bolder;
+}
+
+#red-details {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 0px 6px;
+    color: white;
+}
+
+#red-details:hover {
+    border-bottom: 1px solid white;
+    border-top: 1px solid red;
+    transform: scale(1.03);
+}
