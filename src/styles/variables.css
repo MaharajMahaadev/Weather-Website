@@ -1,0 +1,68 @@
+@import url('/src/styles/main.css');
+
+:root {
+    --color-primary: #B5A1E5;
+    --color-on-primary: #100E17;
+    --color-background: #131214;
+    --color-on-background: #EAE6F2;
+    --color-surface: #2c2b30;
+    --color-on-surface: #DDDAE5;
+    --color-on-surface-variant: #7B7980;
+    --color-on-surface-variant-2: #B9B6BF;
+    --color-outline: #3E3D40;
+    --color-bg-aqi-1: rgb(80, 240, 230);
+    --color-bg-aqi-1-hover: rgb(34, 196, 185);
+    --color-bg-aqi-1-text: rgb(0, 0, 0);
+    --color-bg-aqi-2: rgb(80, 204, 170);
+    --color-bg-aqi-2-hover: rgb(11, 153, 115);
+    --color-bg-aqi-2-text: rgb(0, 0, 0);
+    --color-bg-aqi-3: rgb(240, 230, 65);
+    --color-bg-aqi-3-hover: rgb(184, 176, 23);
+    --color-bg-aqi-3-text: rgb(0, 0, 0);
+    --color-bg-aqi-4: rgb(255, 80, 80);
+    --color-bg-aqi-4-hover: rgb(161, 12, 12);
+    --color-bg-aqi-4-text: rgb(255, 255, 255);
+    --color-bg-aqi-5: rgb(150, 0, 50);
+    --color-bg-aqi-5-hover: rgb(112, 0, 36);
+    --color-bg-aqi-5-text: rgb(255, 255, 255);
+    --color-bg-aqi-6: rgb(125, 33, 129);
+    --color-bg-aqi-6-hover: rgb(64, 7, 66);
+    --color-bg-aqi-6-text: rgb(255, 255, 255);
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-alpha-4: hsla(0, 0%, 100%, 0.04);
+    --color-white-alpha-8: hsla(0, 0%, 100%, 0.08);
+    --color-black-alpha-10: hsla(0, 0%, 0%, 0.1);
+
+    --gradient-1: linear-gradient(180deg, hsla(270, 5%, 7%, 0) 0%, hsla(270, 5%, 7%, 0.8) 65%, hsl(270, 5%, 7%) 100%);
+    --gradient-2: linear-gradient(180deg, hsla(260, 5%, 12%, 0) 0%, hsla(260, 5%, 12%, 0.8) 65%, hsl(260, 5%, 12%) 100%);
+
+    --font-1: 'Nunito Sans', sans-serif;
+    --heading: 5.2rem;
+    --title-1: 2rem;
+    --title-2: 1.8rem;
+    --title-3: 1.6rem;
+    --body-1: 2.2rem;
+    --body-2: 2rem;
+    --body-3: 1.6rem;
+    --label-1: 1.4rem;
+    --label-2: 1.2rem;
+    --weight-regular: 400;
+    --weight-semiBold: 600;
+
+    --shadow-1: 0px 1px 3px hsla(0, 0%, 0%, 0.5);
+    --shadow-2: 0px 3px 6px hsla(0, 0%, 0%, 0.4);
+
+    --radius-28: 28px;
+    --radius-16: 16px;
+    --radius-pill: 500px;
+    --radius-circle: 50%;
+
+    --transition-100ms: all 100ms ease;
+    --transition-300ms: all 300ms ease;
+    --transition-300ms-bsh: color 0.3s ease-in-out, box-shadow .3s ease-in-out;
+    --transition-500ms-bsh: color 0.5s ease-in-out, box-shadow .5s ease-in-out;
+    --transition-500ms: all 500ms ease-in-out;
+    --transition-700ms-bsh: color 0.7s ease-in-out, box-shadow .7s ease-in-out;
+    --transition-1s: all 1s ease-in-out;
+    --transition-2s: all 2s ease-in-out;
+}

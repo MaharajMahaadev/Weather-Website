@@ -1,0 +1,12 @@
+{
+  "name": "weather-website",
+  "version": "1.0.0",
+  "description": "Welcome to the Weather Website project! This is an ongoing development project aimed at creating a responsive website that provides detailed weather reports for various factors such as air quality, wind, sun, UV index, rain chance, and upcoming 7-day forecasts.",
+  "main": "E:\\Visual Studio Code\\VSC Projects\\Weather Website\\src\\app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "src\\views\\home.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
